@@ -60,7 +60,7 @@ const Dashboard: React.FC = () => {
     try {
       // Acho que isto poderia ser melhorado. 🤔
       const response = await api.put(`foods/${editingFood.id}`, {
-        editingFood,
+        ...editingFood,
         ...food,
       });
 
