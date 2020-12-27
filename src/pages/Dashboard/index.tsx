@@ -41,7 +41,7 @@ const Dashboard: React.FC = () => {
     try {
       const response = await api.post('foods', {
         ...food,
-        avaliable: true,
+        available: true,
       });
 
       // TODO - Falta verificar o que está acontecendo aqui.
